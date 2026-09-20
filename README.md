@@ -1,5 +1,3 @@
-# airflow-snowflake-support-pipeline
-Airflow pipeline that cleans Superstore sales data with pandas and loads it into Snowflake, with failure-handling practice
 # Support Pipeline: Airflow + Snowflake
 
 A small data pipeline built to practise the work of a pipeline-support engineer: running a scheduled workflow, reading task logs, diagnosing failures and recovering safely.
