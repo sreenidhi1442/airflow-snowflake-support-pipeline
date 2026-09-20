@@ -27,7 +27,7 @@ superstore_raw.csv --> clean_data --> superstore_clean.csv --> load_to_snowflake
 ## Project layout
 
 ```
-airflow-project/
+airflow-snowflake-support-pipeline/
   dags/
     pipeline_dag.py        # DAG definition: clean_data >> load_to_snowflake
   include/
@@ -42,7 +42,7 @@ airflow-project/
 
 **Prerequisites:** Docker Desktop (with WSL on Windows), the [Astro CLI](https://www.astronomer.io/docs/astro/cli/install-cli), and a Snowflake account with a database `SUPPORT_PROJECT_DB`, a schema `RAW` and a table `ORDERS`.
 
-1. Clone the repository and open the `airflow-project` folder.
+1. Clone the repository and open its folder
 2. Create a `.env` file in that folder with your Snowflake login. Use plain `NAME=value` lines, with no quotes and no spaces:
 ```
    SNOWFLAKE_USER=your_username
